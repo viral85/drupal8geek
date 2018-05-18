@@ -1,0 +1,30 @@
+uuid: 6f54419d-0179-4077-af28-f9272bdbb410
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.nonprofit.field_city
+    - field.field.node.nonprofit.field_mission
+    - field.field.node.nonprofit.field_website
+    - node.type.nonprofit
+  module:
+    - field_layout
+    - layout_discovery
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: node.nonprofit.teaser
+targetEntityType: node
+bundle: nonprofit
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_city: true
+  field_mission: true
+  field_website: true

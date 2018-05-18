@@ -1,0 +1,98 @@
+uuid: 2e34d3a7-9d8f-456d-bf43-512173fe0716
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.nonprofit.field_city
+    - field.field.node.nonprofit.field_mission
+    - field.field.node.nonprofit.field_website
+    - node.type.nonprofit
+  module:
+    - field_layout
+    - layout_discovery
+    - link
+    - path
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: node.nonprofit.default
+targetEntityType: node
+bundle: nonprofit
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_city:
+    weight: 123
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_mission:
+    weight: 124
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_website:
+    weight: 122
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 120
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden: {  }

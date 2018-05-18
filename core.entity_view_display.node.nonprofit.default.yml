@@ -1,0 +1,56 @@
+uuid: a3ee8667-af17-473a-91d2-06a459ec229e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.nonprofit.field_city
+    - field.field.node.nonprofit.field_mission
+    - field.field.node.nonprofit.field_website
+    - node.type.nonprofit
+  module:
+    - field_layout
+    - layout_discovery
+    - link
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_twocol
+    settings: {  }
+id: node.nonprofit.default
+targetEntityType: node
+bundle: nonprofit
+mode: default
+content:
+  field_city:
+    weight: 2
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: second
+  field_mission:
+    weight: 0
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: first
+  field_website:
+    weight: 1
+    label: inline
+    settings:
+      trim_length: 80
+      rel: nofollow
+      target: _blank
+      url_only: false
+      url_plain: false
+    third_party_settings: {  }
+    type: link
+    region: second
+  links:
+    weight: 3
+    region: bottom
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

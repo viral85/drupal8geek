@@ -1,0 +1,18 @@
+uuid: 2912ed2c-1a11-4b9f-96c4-e1bf6d9bd0b3
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Nonprofit
+type: nonprofit
+description: 'Nonprofit content type lets you to create nonprofit contents'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,23 @@
+uuid: 207173e1-55ed-4e9c-ba9f-d775dc595ce1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_website
+    - node.type.nonprofit
+  module:
+    - link
+id: node.nonprofit.field_website
+field_name: field_website
+entity_type: node
+bundle: nonprofit
+label: Website
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

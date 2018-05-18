@@ -1,0 +1,19 @@
+uuid: c8c920b6-6948-4576-834a-935734f3b476
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mission
+    - node.type.nonprofit
+id: node.nonprofit.field_mission
+field_name: field_mission
+entity_type: node
+bundle: nonprofit
+label: Mission
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long
